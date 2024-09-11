@@ -22,11 +22,11 @@ set relativenumber
 set number
 set cursorcolumn " Highlight the current column
 set cursorline " Highlight the current line
-set signcolumn "auto:4" -- Make the signcolumn min 4 wide and scale if needed
+set signcolumn="auto:4" "Make the signcolumn min 4 wide and scale if needed
 set ignorecase " Be case insensitive when searching
 set smartcase " Be case sensitive if we search with capitals
-set shortmess 'I'
+set shortmess="I"
 set undofile
-set shiftwidth 4
+set shiftwidth=4
 set expandtab
-set tabstop 4
+set tabstop=4
