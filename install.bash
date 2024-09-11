@@ -59,5 +59,6 @@ if [ -z "$CUSTOM_BASHRC_INSTALLED" ]; then
     echo "source $HOME/.bashrc_custom" >> .bashrc
 fi
 
+export CUSTOM_BASHRC_INSTALLED=yes
 # TODO: Add hook for custom bash config
 # TODO: Custom back config
