@@ -7,3 +7,7 @@ alias "...."=cd ../../../
 alias "....."=cd ../../../../
 
 alias g=git
+
+function update_dotfiles() {
+    curl "https://raw.githubusercontent.com/DanielVoogsgerd/minimaldotfiles/main/install.bash" | bash
+}
