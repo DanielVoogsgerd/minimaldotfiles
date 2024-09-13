@@ -59,8 +59,9 @@ if [ -z "$CUSTOM_BASHRC_INSTALLED" ]; then
     echo "source ${HOME}/.bashrc_custom" >> .bashrc
 fi
 
-download_file gdbinit "${HOME}.gdbinit"
-
 export CUSTOM_BASHRC_INSTALLED=yes
 # TODO: Add hook for custom bash config
 # TODO: Custom back config
+
+# GDB
+download_file gdbinit "${HOME}/.gdbinit"
