@@ -25,7 +25,7 @@ function download_file() {
 }
 
 # VIM
-download_file vimrc .vimrc
+download_file vimrc "${HOME}.vimrc"
 
 # Commentary plugin
 mkdir -p ~/.vim/pack/tpope/start
@@ -43,7 +43,7 @@ git clone https://tpope.io/vim/surround.git ~/.vim/pack/tpope/start/surround
 git clone https://tpope.io/vim/repeat.git ~/.vim/pack/tpope/start/repeat
 
 # TMUX
-download_file tmux.conf .tmux.conf
+download_file tmux.conf "${HOME}/.tmux.conf"
 
 tmux_plugin_path="$HOME/.config/tmux/plugins"
 
@@ -54,10 +54,12 @@ git clone https://github.com/tmux-plugins/tmux-pain-control "${tmux_plugin_path}
 
 
 # Bash
-download_file bashrc .bashrc_custom
+download_file bashrc "${HOME}/.bashrc_custom"
 if [ -z "$CUSTOM_BASHRC_INSTALLED" ]; then
-    echo "source $HOME/.bashrc_custom" >> .bashrc
+    echo "source ${HOME}/.bashrc_custom" >> .bashrc
 fi
+
+download_file gdbinit "${HOME}.gdbinit"
 
 export CUSTOM_BASHRC_INSTALLED=yes
 # TODO: Add hook for custom bash config
