@@ -36,8 +36,9 @@ git clone https://tpope.io/vim/sensible.git ~/.vim/pack/tpope/start/sensible
 mkdir -p ~/.vim/colors
 wget -O ~/.vim/colors/catppuccin_macchiato.vim https://raw.githubusercontent.com/catppuccin/vim/main/colors/catppuccin_macchiato.vim
 
-# Surround
-git clone https://tpope.io/vim/surround.git ~/.vim/pack/tpope/start/surround
+# Vim-sandwich
+mkdir -p ~/.vim/pack/machakann/start/vim-sandwich
+git clone https://github.com/machakann/vim-sandwich.git ~/.vim/pack/machakann/start/vim-sandwich
 
 # Repeat
 git clone https://tpope.io/vim/repeat.git ~/.vim/pack/tpope/start/repeat
