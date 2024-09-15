@@ -25,7 +25,7 @@ function download_file() {
 }
 
 # VIM
-download_file vimrc "${HOME}.vimrc"
+download_file vimrc "${HOME}/.vimrc"
 
 # Commentary plugin
 mkdir -p ~/.vim/pack/tpope/start
