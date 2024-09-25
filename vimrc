@@ -30,3 +30,5 @@ set undofile
 set shiftwidth=4
 set expandtab
 set tabstop=4
+
+set undodir=~/.local/share/vim/undo

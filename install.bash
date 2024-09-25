@@ -26,6 +26,8 @@ function download_file() {
 
 # VIM
 download_file vimrc "${HOME}/.vimrc"
+mkdir -p ~/.local/share/vim
+mkdir ~/.local/share/undo
 
 # Commentary plugin
 mkdir -p ~/.vim/pack/tpope/start
