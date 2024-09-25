@@ -19,3 +19,5 @@ fi
 function update_dotfiles() {
     curl "https://raw.githubusercontent.com/DanielVoogsgerd/minimaldotfiles/main/install.bash" | bash
 }
+
+PATH="${HOME}/.local/bin:${PATH}"
