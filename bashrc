@@ -13,7 +13,7 @@ alias g=git
 
 if ! command -v nvim &> /dev/null
 then
-    alias vim=nvim
+    alias nvim=vim
 fi
 
 function update_dotfiles() {
