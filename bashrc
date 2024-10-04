@@ -31,3 +31,5 @@ export GROFF_NO_SGR=yes
 export LESS='-F -i -J -M -R -W -x4 -X -z-4'
 
 PATH="${HOME}/.local/bin:${PATH}"
+
+shopt -s globstar
