@@ -66,5 +66,9 @@ export CUSTOM_BASHRC_INSTALLED=yes
 # TODO: Add hook for custom bash config
 # TODO: Custom back config
 
+# Fish
+mkdir -p ~/.config/fish
+download_file config.fish "${HOME}/.config/fish/config.fish"
+
 # GDB
 download_file gdbinit "${HOME}/.gdbinit"
